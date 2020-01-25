@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e63d677a6bfc41dd83140d73a64b6f7c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e63d677a6bfc41dd83140d73a64b6f7c" ></div>
+        
+</body>
+<script>    
+    
+            var map_e63d677a6bfc41dd83140d73a64b6f7c = L.map(
+                "map_e63d677a6bfc41dd83140d73a64b6f7c",
+                {
+                    center: [19.570263289179646, 102.519677],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d913ad3c8d77488c9791ff6f260e6137 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e63d677a6bfc41dd83140d73a64b6f7c);
+        
+    
+            var feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1 = L.featureGroup(
+                {}
+            ).addTo(map_e63d677a6bfc41dd83140d73a64b6f7c);
+        
+    
+            var marker_013ad4169e8d4a038a961836639e1915 = L.marker(
+                [26.29076200000003, 99.97812500000003],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_b7e9aa8368d6408896e6f293f15a441e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d08e992888cc4199a80e1d761c1f8f1d = $(`<div id="html_d08e992888cc4199a80e1d761c1f8f1d" style="width: 100.0%; height: 100.0%;">Haixihai POINT (99.97812500000003 26.29076200000003)</div>`)[0];
+            popup_b7e9aa8368d6408896e6f293f15a441e.setContent(html_d08e992888cc4199a80e1d761c1f8f1d);
+        
+
+        marker_013ad4169e8d4a038a961836639e1915.bindPopup(popup_b7e9aa8368d6408896e6f293f15a441e)
+        ;
+
+        
+    
+    
+            var marker_5c0f5104e3364d03b58368c6695e9845 = L.marker(
+                [26.136007000000063, 99.95553600000005],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_4035b5b69d534415a99391fa9d4884b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08001fc0835d43b7aa98ee867a2c1e75 = $(`<div id="html_08001fc0835d43b7aa98ee867a2c1e75" style="width: 100.0%; height: 100.0%;">Zibihe POINT (99.95553600000005 26.13600700000006)</div>`)[0];
+            popup_4035b5b69d534415a99391fa9d4884b2.setContent(html_08001fc0835d43b7aa98ee867a2c1e75);
+        
+
+        marker_5c0f5104e3364d03b58368c6695e9845.bindPopup(popup_4035b5b69d534415a99391fa9d4884b2)
+        ;
+
+        
+    
+    
+            var marker_b8acab3f11be420c9fc74a3c6091dbdc = L.marker(
+                [24.623123000000078, 100.44806700000004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_d61d2fc62724496699bd71c23c1d5d25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6148a33becb46cc85f6bbe358b649ef = $(`<div id="html_a6148a33becb46cc85f6bbe358b649ef" style="width: 100.0%; height: 100.0%;">Manwan POINT (100.448067 24.62312300000008)</div>`)[0];
+            popup_d61d2fc62724496699bd71c23c1d5d25.setContent(html_a6148a33becb46cc85f6bbe358b649ef);
+        
+
+        marker_b8acab3f11be420c9fc74a3c6091dbdc.bindPopup(popup_d61d2fc62724496699bd71c23c1d5d25)
+        ;
+
+        
+    
+    
+            var marker_e5f36991f6fd4b608ec4c2d7820d4549 = L.marker(
+                [18.531233000000043, 102.54910000000007],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_a749620c60134c7ba95725087f50a71f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01a4bb8c7aab42bd81e9cde5ed1a238f = $(`<div id="html_01a4bb8c7aab42bd81e9cde5ed1a238f" style="width: 100.0%; height: 100.0%;">Nam Ngum POINT (102.5491000000001 18.53123300000004)</div>`)[0];
+            popup_a749620c60134c7ba95725087f50a71f.setContent(html_01a4bb8c7aab42bd81e9cde5ed1a238f);
+        
+
+        marker_e5f36991f6fd4b608ec4c2d7820d4549.bindPopup(popup_a749620c60134c7ba95725087f50a71f)
+        ;
+
+        
+    
+    
+            var marker_5afc88a1c74945d4bc15bf2d52bc48c4 = L.marker(
+                [18.439659000000063, 102.94676500000008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_31941627514a47ccbb8ef79edadee431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d582659fb9714aa3a0068b818a1a3e21 = $(`<div id="html_d582659fb9714aa3a0068b818a1a3e21" style="width: 100.0%; height: 100.0%;">Nam Leuk POINT (102.9467650000001 18.43965900000006)</div>`)[0];
+            popup_31941627514a47ccbb8ef79edadee431.setContent(html_d582659fb9714aa3a0068b818a1a3e21);
+        
+
+        marker_5afc88a1c74945d4bc15bf2d52bc48c4.bindPopup(popup_31941627514a47ccbb8ef79edadee431)
+        ;
+
+        
+    
+    
+            var marker_dba5ede43e01463490e0f8f0c3abcbb1 = L.marker(
+                [16.972114000000033, 103.97604200000006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_150f719555714a49bf2e822744ba6ad9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9bc35df4dc648b6ae7f069fc4d09cd7 = $(`<div id="html_a9bc35df4dc648b6ae7f069fc4d09cd7" style="width: 100.0%; height: 100.0%;">Nam Pung POINT (103.9760420000001 16.97211400000003)</div>`)[0];
+            popup_150f719555714a49bf2e822744ba6ad9.setContent(html_a9bc35df4dc648b6ae7f069fc4d09cd7);
+        
+
+        marker_dba5ede43e01463490e0f8f0c3abcbb1.bindPopup(popup_150f719555714a49bf2e822744ba6ad9)
+        ;
+
+        
+    
+    
+            var marker_2019bb6868ad47858102338b57a06ebc = L.marker(
+                [16.772725000000037, 102.61781700000006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_e314beb9c2d846baa2a9c00758ab8814 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b926db560ef945c58deb76e54c9461a7 = $(`<div id="html_b926db560ef945c58deb76e54c9461a7" style="width: 100.0%; height: 100.0%;">Ubol Ratana POINT (102.6178170000001 16.77272500000004)</div>`)[0];
+            popup_e314beb9c2d846baa2a9c00758ab8814.setContent(html_b926db560ef945c58deb76e54c9461a7);
+        
+
+        marker_2019bb6868ad47858102338b57a06ebc.bindPopup(popup_e314beb9c2d846baa2a9c00758ab8814)
+        ;
+
+        
+    
+    
+            var marker_a03c2350bc6a400caa19ba1ae653364c = L.marker(
+                [16.603534000000025, 103.45312500000006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_0b29c8d945a34659814bdb456d00f2f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a882c5c71f3f4ffeb7436baeb4885f09 = $(`<div id="html_a882c5c71f3f4ffeb7436baeb4885f09" style="width: 100.0%; height: 100.0%;">Lam Pao POINT (103.4531250000001 16.60353400000002)</div>`)[0];
+            popup_0b29c8d945a34659814bdb456d00f2f4.setContent(html_a882c5c71f3f4ffeb7436baeb4885f09);
+        
+
+        marker_a03c2350bc6a400caa19ba1ae653364c.bindPopup(popup_0b29c8d945a34659814bdb456d00f2f4)
+        ;
+
+        
+    
+    
+            var marker_be5246cb986046c88ee8cf45e9a5201b = L.marker(
+                [16.537140000000022, 101.65024600000004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_49ea715ed1ad4622bda9e7deb4be95e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7816aeeb7358409e9cfc32e54dd352ee = $(`<div id="html_7816aeeb7358409e9cfc32e54dd352ee" style="width: 100.0%; height: 100.0%;">Chulabhorn POINT (101.650246 16.53714000000002)</div>`)[0];
+            popup_49ea715ed1ad4622bda9e7deb4be95e8.setContent(html_7816aeeb7358409e9cfc32e54dd352ee);
+        
+
+        marker_be5246cb986046c88ee8cf45e9a5201b.bindPopup(popup_49ea715ed1ad4622bda9e7deb4be95e8)
+        ;
+
+        
+    
+    
+            var marker_1fa905d48c0a4961aac14c23b7fe20b4 = L.marker(
+                [16.411550000000034, 101.79319000000004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_1011ef5420354eb2bb8599444694cd07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94a8351d10c84062a544e5b7f7af7b82 = $(`<div id="html_94a8351d10c84062a544e5b7f7af7b82" style="width: 100.0%; height: 100.0%;">Huai Kum POINT (101.79319 16.41155000000003)</div>`)[0];
+            popup_1011ef5420354eb2bb8599444694cd07.setContent(html_94a8351d10c84062a544e5b7f7af7b82);
+        
+
+        marker_1fa905d48c0a4961aac14c23b7fe20b4.bindPopup(popup_1011ef5420354eb2bb8599444694cd07)
+        ;
+
+        
+    
+    
+            var marker_405ab1efff6641d98c50af59b406a527 = L.marker(
+                [15.535440000000051, 99.44650500000006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_423dd9db81a3411e8541a28e058181a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8777759362e423f868ecca133e60c21 = $(`<div id="html_b8777759362e423f868ecca133e60c21" style="width: 100.0%; height: 100.0%;">Tabsalao POINT (99.44650500000006 15.53544000000005)</div>`)[0];
+            popup_423dd9db81a3411e8541a28e058181a0.setContent(html_b8777759362e423f868ecca133e60c21);
+        
+
+        marker_405ab1efff6641d98c50af59b406a527.bindPopup(popup_423dd9db81a3411e8541a28e058181a0)
+        ;
+
+        
+    
+    
+            var marker_a3dff3cf6aa045a7830fa74b6e02f53e = L.marker(
+                [14.86344500000007, 101.56015900000006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_61571441784044e4b6c6c8385b04e73d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_491359887d3145ec9c8106c7620bbb5b = $(`<div id="html_491359887d3145ec9c8106c7620bbb5b" style="width: 100.0%; height: 100.0%;">Lamtakhong POINT (101.5601590000001 14.86344500000007)</div>`)[0];
+            popup_61571441784044e4b6c6c8385b04e73d.setContent(html_491359887d3145ec9c8106c7620bbb5b);
+        
+
+        marker_a3dff3cf6aa045a7830fa74b6e02f53e.bindPopup(popup_61571441784044e4b6c6c8385b04e73d)
+        ;
+
+        
+    
+    
+            var marker_69173d749392472d9aeae3f312f1237b = L.marker(
+                [14.592853000000048, 101.83934900000008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_024e2eb04dc34323ad8ef2dbbb95f6f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edf6330bc9a842a6a70a0a698ceefafa = $(`<div id="html_edf6330bc9a842a6a70a0a698ceefafa" style="width: 100.0%; height: 100.0%;">Lamphraphloeng POINT (101.8393490000001 14.59285300000005)</div>`)[0];
+            popup_024e2eb04dc34323ad8ef2dbbb95f6f1.setContent(html_edf6330bc9a842a6a70a0a698ceefafa);
+        
+
+        marker_69173d749392472d9aeae3f312f1237b.bindPopup(popup_024e2eb04dc34323ad8ef2dbbb95f6f1)
+        ;
+
+        
+    
+    
+            var marker_7b895d6661da4103b8e4730918eb8fef = L.marker(
+                [14.30029200000007, 102.76592500000004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_96928091e62d45f08275551d5fbbfd70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc4cf9e342ea415a9081eafbab77fd17 = $(`<div id="html_dc4cf9e342ea415a9081eafbab77fd17" style="width: 100.0%; height: 100.0%;">Lamnangrong POINT (102.765925 14.30029200000007)</div>`)[0];
+            popup_96928091e62d45f08275551d5fbbfd70.setContent(html_dc4cf9e342ea415a9081eafbab77fd17);
+        
+
+        marker_7b895d6661da4103b8e4730918eb8fef.bindPopup(popup_96928091e62d45f08275551d5fbbfd70)
+        ;
+
+        
+    
+    
+            var marker_a34f8d0d65f348458c0dd268ebb2297d = L.marker(
+                [15.279676000000052, 105.46770800000007],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_3253db934f9f41848b8834310a12861a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_def48c046cb5416ea1e7f4800d380ec4 = $(`<div id="html_def48c046cb5416ea1e7f4800d380ec4" style="width: 100.0%; height: 100.0%;">Pak Mun POINT (105.4677080000001 15.27967600000005)</div>`)[0];
+            popup_3253db934f9f41848b8834310a12861a.setContent(html_def48c046cb5416ea1e7f4800d380ec4);
+        
+
+        marker_a34f8d0d65f348458c0dd268ebb2297d.bindPopup(popup_3253db934f9f41848b8834310a12861a)
+        ;
+
+        
+    
+    
+            var marker_ab299f7799d84cd1aff1286af8f870b1 = L.marker(
+                [15.205083000000059, 105.43054400000005],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_7000cde9b688464bba81aa60f714b720 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a3524aa7c74b0c987a73d602990983 = $(`<div id="html_f1a3524aa7c74b0c987a73d602990983" style="width: 100.0%; height: 100.0%;">Sirindhorn POINT (105.4305440000001 15.20508300000006)</div>`)[0];
+            popup_7000cde9b688464bba81aa60f714b720.setContent(html_f1a3524aa7c74b0c987a73d602990983);
+        
+
+        marker_ab299f7799d84cd1aff1286af8f870b1.bindPopup(popup_7000cde9b688464bba81aa60f714b720)
+        ;
+
+        
+    
+    
+            var marker_d4aec7420a1942b593b43ddb1e853f6d = L.marker(
+                [15.059528000000057, 106.76513500000004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_bdf986e7bbfd49f384fdb684335a61f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad88fd80216445eeadd3208127c11179 = $(`<div id="html_ad88fd80216445eeadd3208127c11179" style="width: 100.0%; height: 100.0%;">Houayho POINT (106.765135 15.05952800000006)</div>`)[0];
+            popup_bdf986e7bbfd49f384fdb684335a61f8.setContent(html_ad88fd80216445eeadd3208127c11179);
+        
+
+        marker_d4aec7420a1942b593b43ddb1e853f6d.bindPopup(popup_bdf986e7bbfd49f384fdb684335a61f8)
+        ;
+
+        
+    
+    
+            var marker_670148d6ad1042e893b8a717dc5fa837 = L.marker(
+                [11.853249000000062, 108.61145800000008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_9dbc7f3b3fc04746a6bd2d0dd5d4e5be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8132648e83b74a4f946775c1a3dacd15 = $(`<div id="html_8132648e83b74a4f946775c1a3dacd15" style="width: 100.0%; height: 100.0%;">Danhim POINT (108.6114580000001 11.85324900000006)</div>`)[0];
+            popup_9dbc7f3b3fc04746a6bd2d0dd5d4e5be.setContent(html_8132648e83b74a4f946775c1a3dacd15);
+        
+
+        marker_670148d6ad1042e893b8a717dc5fa837.bindPopup(popup_9dbc7f3b3fc04746a6bd2d0dd5d4e5be)
+        ;
+
+        
+    
+    
+            var marker_7c7dc7cfb2c34352972ee84663a00def = L.marker(
+                [11.326775000000055, 107.93350600000008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_7e8ee796afb54afba2dc9c5fbc7bd360 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ef4bc8d0154a56b977b22db9f96ad3 = $(`<div id="html_46ef4bc8d0154a56b977b22db9f96ad3" style="width: 100.0%; height: 100.0%;">Ham Thuan 1 POINT (107.9335060000001 11.32677500000005)</div>`)[0];
+            popup_7e8ee796afb54afba2dc9c5fbc7bd360.setContent(html_46ef4bc8d0154a56b977b22db9f96ad3);
+        
+
+        marker_7c7dc7cfb2c34352972ee84663a00def.bindPopup(popup_7e8ee796afb54afba2dc9c5fbc7bd360)
+        ;
+
+        
+    
+    
+            var marker_9d473f96b37846b4bd00fe1ac7d964bc = L.marker(
+                [17.99679036300006, 104.95226266100008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_d250181f0bb94b4a90bb2309d4bf78b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80fc6463290540bebadf1b127021b7aa = $(`<div id="html_80fc6463290540bebadf1b127021b7aa" style="width: 100.0%; height: 100.0%;">Nam Theun 2 POINT (104.9522626610001 17.99679036300006)</div>`)[0];
+            popup_d250181f0bb94b4a90bb2309d4bf78b5.setContent(html_80fc6463290540bebadf1b127021b7aa);
+        
+
+        marker_9d473f96b37846b4bd00fe1ac7d964bc.bindPopup(popup_d250181f0bb94b4a90bb2309d4bf78b5)
+        ;
+
+        
+    
+    
+            var marker_cacbc722455e478c8d7e25f30c243e2a = L.marker(
+                [18.350670109000077, 102.76865348800004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_6f686bea1a4e4092b39b1b05dd7fe724 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65d0d64f8e654abcbbad2b29b2593c74 = $(`<div id="html_65d0d64f8e654abcbbad2b29b2593c74" style="width: 100.0%; height: 100.0%;">Nam Mang 3 POINT (102.768653488 18.35067010900008)</div>`)[0];
+            popup_6f686bea1a4e4092b39b1b05dd7fe724.setContent(html_65d0d64f8e654abcbbad2b29b2593c74);
+        
+
+        marker_cacbc722455e478c8d7e25f30c243e2a.bindPopup(popup_6f686bea1a4e4092b39b1b05dd7fe724)
+        ;
+
+        
+    
+    
+            var marker_3af05df32050408c942dbfccd2d8f8bc = L.marker(
+                [18.753615466000042, 102.77657039200005],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_e355f92c06e54fd09f273384d577468a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa6cd8c75cbd4b10a875fd13af5fdc95 = $(`<div id="html_aa6cd8c75cbd4b10a875fd13af5fdc95" style="width: 100.0%; height: 100.0%;">Nam Ngum 2 POINT (102.7765703920001 18.75361546600004)</div>`)[0];
+            popup_e355f92c06e54fd09f273384d577468a.setContent(html_aa6cd8c75cbd4b10a875fd13af5fdc95);
+        
+
+        marker_3af05df32050408c942dbfccd2d8f8bc.bindPopup(popup_e355f92c06e54fd09f273384d577468a)
+        ;
+
+        
+    
+    
+            var marker_ad3bb97dc01745f0bc882caf0eac10a2 = L.marker(
+                [19.35531891100004, 102.62038567300004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_2335805bdc8e4188a1daafd69a84d7c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2a33e235edd464e8008e11dba7e4440 = $(`<div id="html_e2a33e235edd464e8008e11dba7e4440" style="width: 100.0%; height: 100.0%;">Nam Ngum 5 POINT (102.620385673 19.35531891100004)</div>`)[0];
+            popup_2335805bdc8e4188a1daafd69a84d7c3.setContent(html_e2a33e235edd464e8008e11dba7e4440);
+        
+
+        marker_ad3bb97dc01745f0bc882caf0eac10a2.bindPopup(popup_2335805bdc8e4188a1daafd69a84d7c3)
+        ;
+
+        
+    
+    
+            var marker_268592468587481bb0eae8b698320147 = L.marker(
+                [14.960121836000042, 107.15976806300006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_17dd10ebdc3349bda1da3b8b79a26294 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe95481917a041c4ac7ab949384f7876 = $(`<div id="html_fe95481917a041c4ac7ab949384f7876" style="width: 100.0%; height: 100.0%;">Xe Kaman 1 POINT (107.1597680630001 14.96012183600004)</div>`)[0];
+            popup_17dd10ebdc3349bda1da3b8b79a26294.setContent(html_fe95481917a041c4ac7ab949384f7876);
+        
+
+        marker_268592468587481bb0eae8b698320147.bindPopup(popup_17dd10ebdc3349bda1da3b8b79a26294)
+        ;
+
+        
+    
+    
+            var marker_c1e4d62072a74adea13f6e6cdfb2b0cb = L.marker(
+                [15.42598494400005, 107.36143035800006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_2f86482dbc9f4b98bae19598cf6ece5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99c692472cd74c70a2afb00c6630b2d1 = $(`<div id="html_99c692472cd74c70a2afb00c6630b2d1" style="width: 100.0%; height: 100.0%;">Xe Kaman 3 POINT (107.3614303580001 15.42598494400005)</div>`)[0];
+            popup_2f86482dbc9f4b98bae19598cf6ece5b.setContent(html_99c692472cd74c70a2afb00c6630b2d1);
+        
+
+        marker_c1e4d62072a74adea13f6e6cdfb2b0cb.bindPopup(popup_2f86482dbc9f4b98bae19598cf6ece5b)
+        ;
+
+        
+    
+    
+            var marker_7ae585ac201449eebf6f29bdd6c55d4f = L.marker(
+                [24.02705437900005, 100.36864670700004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_e1283c69ee064be1861405fa37967797 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5994e491910848adbe6190efbf0663d3 = $(`<div id="html_5994e491910848adbe6190efbf0663d3" style="width: 100.0%; height: 100.0%;">Dachaoshan POINT (100.368646707 24.02705437900005)</div>`)[0];
+            popup_e1283c69ee064be1861405fa37967797.setContent(html_5994e491910848adbe6190efbf0663d3);
+        
+
+        marker_7ae585ac201449eebf6f29bdd6c55d4f.bindPopup(popup_e1283c69ee064be1861405fa37967797)
+        ;
+
+        
+    
+    
+            var marker_acdf059c342a46e4882e03cd83b214e8 = L.marker(
+                [25.585622096000066, 99.33541127200004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_54779260df18480eb6892e3d0861f3ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5820d5372a7a4f27818c5b03e4997548 = $(`<div id="html_5820d5372a7a4f27818c5b03e4997548" style="width: 100.0%; height: 100.0%;">Gongguoqiao POINT (99.33541127200004 25.58562209600007)</div>`)[0];
+            popup_54779260df18480eb6892e3d0861f3ee.setContent(html_5820d5372a7a4f27818c5b03e4997548);
+        
+
+        marker_acdf059c342a46e4882e03cd83b214e8.bindPopup(popup_54779260df18480eb6892e3d0861f3ee)
+        ;
+
+        
+    
+    
+            var marker_a52f45b0f86d4d13ab15d5f757baf7c1 = L.marker(
+                [12.530393447000051, 107.92626472300009],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_ef794391bb6c49b9b5a0823325ce2b2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3db4977b522431eb7e7273fb5969fd4 = $(`<div id="html_a3db4977b522431eb7e7273fb5969fd4" style="width: 100.0%; height: 100.0%;">Buon Kuop POINT (107.9262647230001 12.53039344700005)</div>`)[0];
+            popup_ef794391bb6c49b9b5a0823325ce2b2a.setContent(html_a3db4977b522431eb7e7273fb5969fd4);
+        
+
+        marker_a52f45b0f86d4d13ab15d5f757baf7c1.bindPopup(popup_ef794391bb6c49b9b5a0823325ce2b2a)
+        ;
+
+        
+    
+    
+            var marker_753dd8525be248b7b3a22ab8ba2343dc = L.marker(
+                [13.039576065000062, 107.93544315700007],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_eade7e25c95347e99b45bc49e9470100 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c079968b367b45e490b7a5c2dc5456d6 = $(`<div id="html_c079968b367b45e490b7a5c2dc5456d6" style="width: 100.0%; height: 100.0%;">Ea Soup Thuong POINT (107.9354431570001 13.03957606500006)</div>`)[0];
+            popup_eade7e25c95347e99b45bc49e9470100.setContent(html_c079968b367b45e490b7a5c2dc5456d6);
+        
+
+        marker_753dd8525be248b7b3a22ab8ba2343dc.bindPopup(popup_eade7e25c95347e99b45bc49e9470100)
+        ;
+
+        
+    
+    
+            var marker_e359a03728c548bea0c1966284903ec8 = L.marker(
+                [22.052102115000025, 100.76448560300008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_91eb7c2cc8314b4dbe485d1f664dc26e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe053511ca8a4db9b67d0a8cb8c4b59c = $(`<div id="html_fe053511ca8a4db9b67d0a8cb8c4b59c" style="width: 100.0%; height: 100.0%;">Jinghong POINT (100.7644856030001 22.05210211500003)</div>`)[0];
+            popup_91eb7c2cc8314b4dbe485d1f664dc26e.setContent(html_fe053511ca8a4db9b67d0a8cb8c4b59c);
+        
+
+        marker_e359a03728c548bea0c1966284903ec8.bindPopup(popup_91eb7c2cc8314b4dbe485d1f664dc26e)
+        ;
+
+        
+    
+    
+            var marker_a147063616154decb700ef59278889c3 = L.marker(
+                [12.778757884000072, 108.37028920200004],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_3bf430b69f08458aae58d51908427c04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8d29023d85f4812a029d95e7d4854bc = $(`<div id="html_b8d29023d85f4812a029d95e7d4854bc" style="width: 100.0%; height: 100.0%;">Krong Buk Ha POINT (108.370289202 12.77875788400007)</div>`)[0];
+            popup_3bf430b69f08458aae58d51908427c04.setContent(html_b8d29023d85f4812a029d95e7d4854bc);
+        
+
+        marker_a147063616154decb700ef59278889c3.bindPopup(popup_3bf430b69f08458aae58d51908427c04)
+        ;
+
+        
+    
+    
+            var marker_092e3c4a5bb048b2820bc5b8ab191c34 = L.marker(
+                [14.409990416000028, 107.86443850800003],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_852e062ffd314213acce41b58835a3e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9481a22551c640f599fcbf189a4f7561 = $(`<div id="html_9481a22551c640f599fcbf189a4f7561" style="width: 100.0%; height: 100.0%;">Plei Krong POINT (107.864438508 14.40999041600003)</div>`)[0];
+            popup_852e062ffd314213acce41b58835a3e9.setContent(html_9481a22551c640f599fcbf189a4f7561);
+        
+
+        marker_092e3c4a5bb048b2820bc5b8ab191c34.bindPopup(popup_852e062ffd314213acce41b58835a3e9)
+        ;
+
+        
+    
+    
+            var marker_13f0f8716ead44f69a72f58420253384 = L.marker(
+                [13.968156416000056, 107.49726350300006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_e2f00a9cdad440f582540e6cfb3cd0b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5a627b8ce06472f813255ff2d32957b = $(`<div id="html_a5a627b8ce06472f813255ff2d32957b" style="width: 100.0%; height: 100.0%;">Se San IV POINT (107.4972635030001 13.96815641600006)</div>`)[0];
+            popup_e2f00a9cdad440f582540e6cfb3cd0b0.setContent(html_a5a627b8ce06472f813255ff2d32957b);
+        
+
+        marker_13f0f8716ead44f69a72f58420253384.bindPopup(popup_e2f00a9cdad440f582540e6cfb3cd0b0)
+        ;
+
+        
+    
+    
+            var marker_7e50bf84cec54c42adbd250c1a447616 = L.marker(
+                [22.64087936100003, 100.42962344500006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_6c68460d88ab403aa565f4bfa702bb15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca92f261dc144ed99f668bcdafd64d06 = $(`<div id="html_ca92f261dc144ed99f668bcdafd64d06" style="width: 100.0%; height: 100.0%;">Nuozhadu POINT (100.4296234450001 22.64087936100003)</div>`)[0];
+            popup_6c68460d88ab403aa565f4bfa702bb15.setContent(html_ca92f261dc144ed99f668bcdafd64d06);
+        
+
+        marker_7e50bf84cec54c42adbd250c1a447616.bindPopup(popup_6c68460d88ab403aa565f4bfa702bb15)
+        ;
+
+        
+    
+    
+            var marker_53a60000cd1e4c2787e4281ac388c781 = L.marker(
+                [24.706594960000075, 100.09382494800008],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_f9cf903f67b14f76901fc075c51aa004 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18c958a445564f44b6d4fd5b4e753d9d = $(`<div id="html_18c958a445564f44b6d4fd5b4e753d9d" style="width: 100.0%; height: 100.0%;">Xiaowan POINT (100.0938249480001 24.70659496000007)</div>`)[0];
+            popup_f9cf903f67b14f76901fc075c51aa004.setContent(html_18c958a445564f44b6d4fd5b4e753d9d);
+        
+
+        marker_53a60000cd1e4c2787e4281ac388c781.bindPopup(popup_f9cf903f67b14f76901fc075c51aa004)
+        ;
+
+        
+    
+    
+            var marker_223f214735914853b769ace7b77ba034 = L.marker(
+                [13.55220468400006, 106.25667416900006],
+                {}
+            ).addTo(feature_group_023b8c7c0f3a44ee9afb3ec1eb7cc9d1);
+        
+    
+        var popup_612c6fc6283840109dd9e0008f3aacf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3022e780ba7c4f3cb051a31a6cd8d11d = $(`<div id="html_3022e780ba7c4f3cb051a31a6cd8d11d" style="width: 100.0%; height: 100.0%;">Lower Sesan II POINT (106.2566741690001 13.55220468400006)</div>`)[0];
+            popup_612c6fc6283840109dd9e0008f3aacf5.setContent(html_3022e780ba7c4f3cb051a31a6cd8d11d);
+        
+
+        marker_223f214735914853b769ace7b77ba034.bindPopup(popup_612c6fc6283840109dd9e0008f3aacf5)
+        ;
+
+        
+    
+</script>
